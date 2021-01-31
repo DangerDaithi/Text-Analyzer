@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <title>Truth Engine</title>
+    <script src="/static/lib/angular/angular-1-5-9.js"></script>
+    <script src="/static/lib/angular/angular-ui-router-0-4-0.js"></script>
+    <script src="/static/js/app.js"></script>
+    <script src="/static/js/factories/truthEngineApi.js"></script>
+    <script src="/static/js/controllers/masterController.js"></script>
+    <script src="/static/js/controllers/textAnalyzerController.js"></script>
+    <script src="/static/js/services/animationService.js"></script>
+    <link rel="stylesheet" href="/static/css/animate.css"/>
+    <link rel="stylesheet" href="/static/css/truthEngine.css"/>
+    <link rel="stylesheet" href="/static/css/font-awesome.css"/>
+</head>
+<body class="animated fadeIn" ng-app="truthEngineApp">
+<div ng-controller="masterController as masterCtrl">
+
+    <!-- header -->
+    <div ng-include="'../static/templates/header.html'">
+    </div>
+
+    <!-- main content -->
+    <div ng-include="'../static/templates/mainContent.html'">
+    </div>
+</div>
+</body>
+</html>

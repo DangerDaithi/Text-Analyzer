@@ -1,0 +1,16 @@
+<div>
+    <div id="textAnalyze" class="textAnalyze animated zoomInRight">
+        <span class="analyzeInstruction">Paste your article text below, and click the analyze button to see the results</span>
+        <textarea id="textInput" ng-model="textAnalyzeCtrl.text" class="textInput" type="text"></textarea>
+    </div>
+    <div id="buttons" class="buttons animated bounceInUp">
+
+        <input value="Zuckerberg Manifesto" class="button resourceButton" ng-click="textAnalyzeCtrl.getResourceText('mark_zuck_manifesto')">
+
+        </input>
+        <input value="Analyze" class="button anlayzeButton" ng-disabled="textAnalyzeCtrl.text.length === 0" ng-click="textAnalyzeCtrl.analyzeText()">
+
+        </input>
+
+    </div>
+</div>
